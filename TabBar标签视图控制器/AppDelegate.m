@@ -58,8 +58,12 @@
     sixthVC.tabBarItem.title = @"sixthVC";
     
     //给控制器设置图标
-    firstNV.tabBarItem.image = [UIImage imageNamed:@"ChatList_Contact_Icon_HL.tiff"];
-    
+    firstNV.tabBarItem.image = [UIImage imageNamed:@"Chat_GroupList_Btn_Click.tiff"];
+    secondVC.tabBarItem.image = [UIImage imageNamed:@"icon_0_128x128.png"];
+    thirdVC.tabBarItem.image = [UIImage imageNamed:@"f289b8cf95b1dd247dc8b43ce63113.png"];
+    fourthVC.tabBarItem.image = [UIImage imageNamed:@"HeadShow101.tiff"];
+    fifthVC.tabBarItem.image = [UIImage imageNamed:@"SendFile_Icon_Click.tiff"];
+    sixthVC.tabBarItem.image = [UIImage imageNamed:@"Expression_30.tiff"];
     
     NSArray *controllers = @[firstNV , secondVC , thirdVC , fourthVC , fifthVC , sixthVC];
     
