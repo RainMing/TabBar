@@ -14,6 +14,13 @@
 		34A63ADB1B44083E002C9FB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A63ADA1B44083E002C9FB2 /* Images.xcassets */; };
 		34A63ADE1B44083E002C9FB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A63ADC1B44083E002C9FB2 /* LaunchScreen.xib */; };
 		34A63AEA1B44083E002C9FB2 /* TabBar_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A63AE91B44083E002C9FB2 /* TabBar_______Tests.m */; };
+		34A63B221B443390002C9FB2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A63B151B443390002C9FB2 /* FirstViewController.m */; };
+		34A63B231B443390002C9FB2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A63B171B443390002C9FB2 /* SecondViewController.m */; };
+		34A63B241B443390002C9FB2 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A63B191B443390002C9FB2 /* ThirdViewController.m */; };
+		34A63B251B443390002C9FB2 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A63B1B1B443390002C9FB2 /* FourthViewController.m */; };
+		34A63B261B443390002C9FB2 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A63B1D1B443390002C9FB2 /* FifthViewController.m */; };
+		34A63B271B443390002C9FB2 /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A63B1F1B443390002C9FB2 /* SixthViewController.m */; };
+		34A63B281B443390002C9FB2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A63B211B443390002C9FB2 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,21 @@
 		34A63AE31B44083E002C9FB2 /* TabBar标签视图控制器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TabBar标签视图控制器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A63AE81B44083E002C9FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A63AE91B44083E002C9FB2 /* TabBar_______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TabBar_______Tests.m"; sourceTree = "<group>"; };
+		34A63B141B443390002C9FB2 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		34A63B151B443390002C9FB2 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		34A63B161B443390002C9FB2 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		34A63B171B443390002C9FB2 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		34A63B181B443390002C9FB2 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		34A63B191B443390002C9FB2 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		34A63B1A1B443390002C9FB2 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		34A63B1B1B443390002C9FB2 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		34A63B1C1B443390002C9FB2 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		34A63B1D1B443390002C9FB2 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		34A63B1E1B443390002C9FB2 /* SixthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
+		34A63B1F1B443390002C9FB2 /* SixthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthViewController.m; sourceTree = "<group>"; };
+		34A63B201B443390002C9FB2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		34A63B211B443390002C9FB2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		34A63B291B4433C1002C9FB2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +107,8 @@
 				34A63AD21B44083E002C9FB2 /* AppDelegate.m */,
 				34A63AD41B44083E002C9FB2 /* ViewController.h */,
 				34A63AD51B44083E002C9FB2 /* ViewController.m */,
+				34A63B131B443371002C9FB2 /* Controllers */,
+				34A63B291B4433C1002C9FB2 /* PrefixHeader.pch */,
 				34A63AD71B44083E002C9FB2 /* Main.storyboard */,
 				34A63ADA1B44083E002C9FB2 /* Images.xcassets */,
 				34A63ADC1B44083E002C9FB2 /* LaunchScreen.xib */,
@@ -117,6 +141,27 @@
 				34A63AE81B44083E002C9FB2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34A63B131B443371002C9FB2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34A63B141B443390002C9FB2 /* FirstViewController.h */,
+				34A63B151B443390002C9FB2 /* FirstViewController.m */,
+				34A63B161B443390002C9FB2 /* SecondViewController.h */,
+				34A63B171B443390002C9FB2 /* SecondViewController.m */,
+				34A63B181B443390002C9FB2 /* ThirdViewController.h */,
+				34A63B191B443390002C9FB2 /* ThirdViewController.m */,
+				34A63B1A1B443390002C9FB2 /* FourthViewController.h */,
+				34A63B1B1B443390002C9FB2 /* FourthViewController.m */,
+				34A63B1C1B443390002C9FB2 /* FifthViewController.h */,
+				34A63B1D1B443390002C9FB2 /* FifthViewController.m */,
+				34A63B1E1B443390002C9FB2 /* SixthViewController.h */,
+				34A63B1F1B443390002C9FB2 /* SixthViewController.m */,
+				34A63B201B443390002C9FB2 /* RootViewController.h */,
+				34A63B211B443390002C9FB2 /* RootViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A63B261B443390002C9FB2 /* FifthViewController.m in Sources */,
+				34A63B231B443390002C9FB2 /* SecondViewController.m in Sources */,
 				34A63AD61B44083E002C9FB2 /* ViewController.m in Sources */,
+				34A63B241B443390002C9FB2 /* ThirdViewController.m in Sources */,
+				34A63B281B443390002C9FB2 /* RootViewController.m in Sources */,
 				34A63AD31B44083E002C9FB2 /* AppDelegate.m in Sources */,
+				34A63B271B443390002C9FB2 /* SixthViewController.m in Sources */,
 				34A63AD01B44083E002C9FB2 /* main.m in Sources */,
+				34A63B251B443390002C9FB2 /* FourthViewController.m in Sources */,
+				34A63B221B443390002C9FB2 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TabBar标签视图控制器/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBar标签视图控制器/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TabBar标签视图控制器/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBar标签视图控制器/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +470,7 @@
 				34A63AEF1B44083E002C9FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34A63AF01B44083E002C9FB2 /* Build configuration list for PBXNativeTarget "TabBar标签视图控制器Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +479,7 @@
 				34A63AF21B44083E002C9FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
