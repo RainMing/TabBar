@@ -114,6 +114,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		349B93801B4521CC000BE085 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		34A63AC11B44083E002C9FB2 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +148,7 @@
 				34A63AD51B44083E002C9FB2 /* ViewController.m */,
 				34A63B2A1B4436A6002C9FB2 /* WeChatIcon */,
 				34A63B131B443371002C9FB2 /* Controllers */,
+				349B93801B4521CC000BE085 /* view */,
 				34A63B291B4433C1002C9FB2 /* PrefixHeader.pch */,
 				34A63AD71B44083E002C9FB2 /* Main.storyboard */,
 				34A63ADA1B44083E002C9FB2 /* Images.xcassets */,
