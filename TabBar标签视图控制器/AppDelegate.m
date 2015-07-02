@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -65,13 +65,47 @@
     fifthVC.tabBarItem.image = [UIImage imageNamed:@"SendFile_Icon_Click.tiff"];
     sixthVC.tabBarItem.image = [UIImage imageNamed:@"Expression_30.tiff"];
     
+    //准备一个数组，用来存放控制器
     NSArray *controllers = @[firstNV , secondVC , thirdVC , fourthVC , fifthVC , sixthVC];
-    
+    //创建一个标签试图控制器
     UITabBarController *tabarVCS = [[UITabBarController alloc]init];
+   //给创建的标签试图控制器指定已经准备好的单试图控制器数组 controllers
     tabarVCS.viewControllers = controllers;
     
+    
+    
+    //************标签视图控制器的属性*******
+    //设置标签视图控制器中单试图控制器的渲染颜色
+    tabarVCS.tabBar.tintColor = [UIColor magentaColor];
+    //设置标签试图控制器自身的颜色
+//    tabarVCS.tabBar.backgroundColor = [UIColor greenColor];
+//    tabarVCS.tabBar.barTintColor = [UIColor greenColor];//两者的效果不同
+    //设置标签试图控制器，默认选中的控制器
+//    tabarVCS.selectedIndex = 1;
+//    tabarVCS.selectedViewController = secondVC;//两者的结果一样
+
+    //标签试图控制器的样式
+    tabarVCS.tabBar.barStyle = UIBarStyleBlackOpaque;
+    /*
+     UIBarStyleDefault          
+     UIBarStyleBlack
+     UIBarStyleBlackOpaque
+     UIBarStyleBlackTranslucent //弃用。使用UIBarStyleBlack和半透明的属性设置为YES
+     */
+    
+    //设置标签试图控制器的代理
+    tabarVCS.delegate = self;
+    
+        
+    //指定为根视图控制器
     self.window.rootViewController = tabarVCS;
     
+   
+    
+    
+    
+    
+    //释放
     [firstVC release];
     [secondVC release];
     [thirdVC release];
@@ -79,14 +113,107 @@
     [fifthVC release];
     [sixthVC release];
     [firstNV release];
-    
-    
-    
-    
-    
+  
+//    [self tabBarController:tabarVCS animationControllerForTransitionFromViewController:sixthVC toViewController:fifthVC];
+//    [self tabBarController:tabarVCS didSelectViewController:secondVC];
     
     return YES;
 }
+
+#pragma mark - taBarController Delegate
+//控制器不让选中某一个(NO:不让进入某一个控制器  YES://让进入某一个控制器)
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    //控制器选中某一个(调用if  里面的方法 ，否则调用if外面的方法)
+    if (([viewController isKindOfClass:[FourthViewController class]])||([viewController isKindOfClass:[FifthViewController class]])) {
+       
+        NSLog(@"视图控制器之间转变时会调用");
+        return NO;//不让进入某一个控制器
+    }
+    NSLog(@"两个视图控制器之间转变时会调用");
+    return YES;//让进入某一个控制器
+}
+
+//标签视图控制器中两个视图控制器转变时调用该方法
+/*
+- (id<UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController animationControllerForTransitionFromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+{
+
+    NSLog(@"两个视图控制器之间转变时会调用");
+    
+    return 0;
+}
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    NSLog(@"两个视图控制器之间转变时会调用");
+}
+ 
+
+
+ 
+ //对标签视图控制器进行edit 是调用该方法
+ - (void)tabBarController:(UITabBarController *)tabBarController willBeginCustomizingViewControllers:(NSArray *)viewControllers
+ {
+ NSLog(@"对标签视图控制器进行editing 是调用该方法");
+ }
+ 
+ //对标签视图控制器进行editing 结束是调用该方法
+ - (void)tabBarController:(UITabBarController *)tabBarController willEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+ {
+ NSLog(@"对标签视图控制器进行editing 结束是调用该方法");
+ }
+ 
+ - (NSUInteger)tabBarControllerSupportedInterfaceOrientations:(UITabBarController *)tabBarController
+ {
+ 
+ NSLog(@"sfdghrsth");
+ //测试时返回的数字不同时如 （6、7）和 8、20之间的不同（最好逐个测试从6开始）
+ 
+ return 16;
+ }
+ 
+ 
+ */
+
+/*
+- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+{
+    //该方法有待测试，
+    NSLog(@"ceshi");
+}
+ 
+ - (id<UIViewControllerInteractiveTransitioning>)tabBarController:(UITabBarController *)tabBarController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
+ {
+ NSLog(@"fghdfh");
+ return 0;
+ }
+ 
+ 
+ - (UIInterfaceOrientation)tabBarControllerPreferredInterfaceOrientationForPresentation:(UITabBarController *)tabBarController
+ {
+ 
+ NSLog(@"dggsvfds");
+ return 0;
+ }
+ 
+ 
+ 
+ */
+
+
+
+/*
+ - (id)targetForAction:(SEL)action withSender:(id)sender
+ {
+ NSLog(@"drgfsdr");
+ return 0;
+ }
+ */
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
